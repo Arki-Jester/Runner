@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
+            <connections>
+                <outlet property="aboutBtn" destination="Mj2-ui-m6a" id="uLP-SD-QuL"/>
+                <outlet property="bestBtn" destination="nDL-rs-XmF" id="utd-RJ-Dko"/>
+                <outlet property="startBtn" destination="4Qt-DL-dZg" id="X3N-0A-gAv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crazy Runner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybe-1E-gXg">
+                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Qt-DL-dZg">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="VbP-u0-eb4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="start race">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="VbP-u0-eb4"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="VbP-u0-eb4"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="startRace:" destination="-1" eventType="touchUpInside" id="uzf-IN-Orx"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDL-rs-XmF">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="130" id="HlM-Sv-4N2">
+                            <variation key="heightClass=regular-widthClass=compact" constant="150"/>
+                        </constraint>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="best record">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="HlM-Sv-4N2"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="HlM-Sv-4N2"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="bestRecordClick:" destination="-1" eventType="touchUpInside" id="G98-vB-NCj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mj2-ui-m6a">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="130" id="zqP-Xk-kdA">
+                            <variation key="heightClass=regular-widthClass=compact" constant="150"/>
+                        </constraint>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="about us">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="zqP-Xk-kdA"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="zqP-Xk-kdA"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="aboutUsClick:" destination="-1" eventType="touchUpInside" id="Uei-Rq-LEE"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ybe-1E-gXg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="129" id="4Ro-N8-tH7">
+                    <variation key="heightClass=regular-widthClass=compact" constant="130"/>
+                </constraint>
+                <constraint firstItem="nDL-rs-XmF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6Q2-T2-cU6"/>
+                <constraint firstItem="Mj2-ui-m6a" firstAttribute="top" secondItem="nDL-rs-XmF" secondAttribute="bottom" constant="22" id="B2K-qw-LeL">
+                    <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                </constraint>
+                <constraint firstItem="4Qt-DL-dZg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Bat-hm-RuV"/>
+                <constraint firstItem="Mj2-ui-m6a" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IqV-cj-j2N"/>
+                <constraint firstItem="4Qt-DL-dZg" firstAttribute="top" secondItem="ybe-1E-gXg" secondAttribute="bottom" constant="106" id="N0k-29-tXh"/>
+                <constraint firstItem="ybe-1E-gXg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="QNZ-56-aEB"/>
+                <constraint firstAttribute="bottom" secondItem="Mj2-ui-m6a" secondAttribute="bottom" constant="342" id="h5Q-Q0-A36">
+                    <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                </constraint>
+                <constraint firstItem="nDL-rs-XmF" firstAttribute="top" secondItem="4Qt-DL-dZg" secondAttribute="bottom" constant="18" id="kYx-jc-RAf">
+                    <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                </constraint>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="ybe-1E-gXg"/>
+                    <exclude reference="4Qt-DL-dZg"/>
+                    <exclude reference="nDL-rs-XmF"/>
+                    <exclude reference="Mj2-ui-m6a"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="Bat-hm-RuV"/>
+                    <exclude reference="N0k-29-tXh"/>
+                    <exclude reference="B2K-qw-LeL"/>
+                    <exclude reference="IqV-cj-j2N"/>
+                    <exclude reference="h5Q-Q0-A36"/>
+                    <exclude reference="6Q2-T2-cU6"/>
+                    <exclude reference="kYx-jc-RAf"/>
+                    <exclude reference="4Ro-N8-tH7"/>
+                    <exclude reference="QNZ-56-aEB"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="ybe-1E-gXg"/>
+                    <include reference="4Qt-DL-dZg"/>
+                    <include reference="nDL-rs-XmF"/>
+                    <include reference="Mj2-ui-m6a"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="Bat-hm-RuV"/>
+                    <exclude reference="N0k-29-tXh"/>
+                    <include reference="B2K-qw-LeL"/>
+                    <include reference="IqV-cj-j2N"/>
+                    <include reference="h5Q-Q0-A36"/>
+                    <include reference="6Q2-T2-cU6"/>
+                    <include reference="kYx-jc-RAf"/>
+                    <include reference="4Ro-N8-tH7"/>
+                    <include reference="QNZ-56-aEB"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

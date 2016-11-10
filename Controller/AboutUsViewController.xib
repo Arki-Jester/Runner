@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutUsViewController">
+            <connections>
+                <outlet property="logo" destination="5bO-vW-Dfn" id="PfU-N7-XSH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AJ.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5bO-vW-Dfn">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="479" id="HJa-D9-G1u">
+                            <variation key="heightClass=regular-widthClass=compact" constant="180"/>
+                        </constraint>
+                        <constraint firstAttribute="width" constant="480" id="oJz-HM-lsi">
+                            <variation key="heightClass=regular-widthClass=compact" constant="180"/>
+                        </constraint>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="HJa-D9-G1u"/>
+                            <exclude reference="oJz-HM-lsi"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="HJa-D9-G1u"/>
+                            <include reference="oJz-HM-lsi"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arki-Jester." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enn-MW-i23">
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="arki_jester@hotmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMS-0d-eoj">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="enn-MW-i23" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2qL-xX-tOb"/>
+                <constraint firstItem="enn-MW-i23" firstAttribute="top" secondItem="5bO-vW-Dfn" secondAttribute="bottom" constant="87" id="Aai-Px-fCS">
+                    <variation key="heightClass=regular-widthClass=compact" constant="45"/>
+                </constraint>
+                <constraint firstItem="5bO-vW-Dfn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ge8-TQ-gG1"/>
+                <constraint firstItem="MMS-0d-eoj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Y4g-zj-R9G"/>
+                <constraint firstItem="MMS-0d-eoj" firstAttribute="top" secondItem="enn-MW-i23" secondAttribute="bottom" constant="40" id="i0j-tb-m2c"/>
+                <constraint firstItem="5bO-vW-Dfn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="258" id="rko-2k-rue">
+                    <variation key="heightClass=regular-widthClass=compact" constant="100"/>
+                </constraint>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="5bO-vW-Dfn"/>
+                    <exclude reference="enn-MW-i23"/>
+                    <exclude reference="MMS-0d-eoj"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="Y4g-zj-R9G"/>
+                    <exclude reference="i0j-tb-m2c"/>
+                    <exclude reference="2qL-xX-tOb"/>
+                    <exclude reference="Aai-Px-fCS"/>
+                    <exclude reference="Ge8-TQ-gG1"/>
+                    <exclude reference="rko-2k-rue"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="5bO-vW-Dfn"/>
+                    <include reference="enn-MW-i23"/>
+                    <include reference="MMS-0d-eoj"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="Y4g-zj-R9G"/>
+                    <include reference="i0j-tb-m2c"/>
+                    <include reference="2qL-xX-tOb"/>
+                    <include reference="Aai-Px-fCS"/>
+                    <include reference="Ge8-TQ-gG1"/>
+                    <include reference="rko-2k-rue"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="AJ.jpg" width="768" height="850"/>
+    </resources>
+</document>
